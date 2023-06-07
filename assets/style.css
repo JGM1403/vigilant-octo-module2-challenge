@@ -16,11 +16,13 @@ header {
 }
 
 header h1 {
+    display: flex;
     display: inline-block;
-    font-size: 55px;
+    font-size: 50px;
 }
 
 header ul {
+    display: flex;
     list-style-type: none;
     margin-right: 20px;
     padding-top: 15px;
@@ -38,6 +40,13 @@ header ul li {
     width: 100%;
     background-image: url("../assets/IMG_1147.jpeg");
     background-size: cover;
+}
+
+article {
+    background-color: var(--background);
+    width: 80%;
+    margin-left: 15px;
+
 }
 
 h2 {
@@ -60,6 +69,7 @@ h2 {
     margin-left: 15px;
     list-style: circle;
     padding: 20px;
+    margin-bottom: 15px;
 }
 
 .float {
@@ -68,3 +78,31 @@ h2 {
     max-height: 150px;
 }
 
+.work1 {
+    width: 80%;
+    background: var(--background);
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.workimg {
+    
+    max-height: 300px;
+    padding: 22px;
+}
+
+footer {
+    text-align: center;
+    background-color: burlywood;
+    padding: 10px;
+    margin-top: 30px;
+
+}
+
+@media screen and (max-width: 810px) {
+    ul {
+        flex-direction: column;
+        padding: 0px;
+        font-size: 10px;
+        }
+}
